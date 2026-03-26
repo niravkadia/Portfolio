@@ -1,0 +1,39 @@
+# Python Development Environment Requirements
+# Generated based on the portfolio projects and skills
+
+# Frameworks
+fastapi
+django
+djangorestframework
+
+# AI & Automation
+openclaw
+crewai
+
+# Database
+psycopg2-binary  # For PostgreSQL
+motor            # For MongoDB (FastAPI/Asynchronous)
+SQLAlchemy
+pydantic
+
+# Authentication & Security
+PyJWT
+passlib[bcrypt]
+python-multipart
+
+# APIs & Integrations
+stripe
+google-api-python-client
+google-auth-oauthlib
+requests
+
+# Utilities & Reporting
+reportlab
+python-dotenv
+uvicorn
+gunicorn
+
+# Testing & Development
+pytest
+flake8
+black
