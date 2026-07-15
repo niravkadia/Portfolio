@@ -1,25 +1,18 @@
-const { createServer } = require("http");
-const { parse } = require("url");
-const next = require("next");
+const { spawn } = require("child_process");
 
-const hostname = "0.0.0.0";
-const port = Number(process.env.PORT || 3000);
-const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev, hostname, port });
-const handle = app.getRequestHandler();
+const port = process.env.PORT || 3000;
+const start = process.platform === "win32" ? "npm.cmd" : "npm";
 
-app.prepare().then(() => {
-  createServer((req, res) => {
-    const parsedUrl = parse(req.url, true);
-    handle(req, res, parsedUrl);
-  }).listen(port, hostname, (err) => {
-    if (err) {
-      throw err;
-    }
+const child = spawn(start, ["run", "start:next"], {
+  env: { ...process.env, PORT: String(port), HOSTNAME: "0.0.0.0" },
+  stdio: "inherit",
+  shell: false,
+});
 
-    console.log(`> Ready on http://${hostname}:${port}`);
-  });
-}).catch((err) => {
-  console.error(err);
-  process.exit(1);
+child.on("exit", (code, signal) => {
+  if (signal) {
+    process.kill(process.pid, signal);
+  } else {
+    process.exit(code || 0);
+  }
 });
