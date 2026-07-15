@@ -2,7 +2,10 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Terminal, Code2, Database } from "lucide-react";
-import { cn } from "../../src/lib/utils";
+
+function cn(...classes: Array<string | false | null | undefined>) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Hero() {
   return (
