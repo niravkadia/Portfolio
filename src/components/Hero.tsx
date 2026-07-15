@@ -69,8 +69,8 @@ export default function Hero() {
                 <p className="text-blue-400">def <span className="text-yellow-400">__init__</span>(self):</p>
                 <p className="pl-4"><span className="text-purple-400">self</span>.name = <span className="text-green-400">"Nirav Kadia"</span></p>
                 <p className="pl-4"><span className="text-purple-400">self</span>.role = <span className="text-green-400">"Python Developer"</span></p>
-                <p className="pl-4"><span className="text-purple-400">self</span>.frameworks = [<span className="text-green-400">"FastAPI"</span>, <span className="text-green-400">"Django"</span>]</p>
-                <p className="pl-4"><span className="text-purple-400">self</span>.focus = [<span className="text-green-400">"AI Automation"</span>, <span className="text-green-400">"Microservices"</span>]</p>
+                <p className="pl-4"><span className="text-purple-400">self</span>.frameworks = [<span className="text-green-400">"Django"</span>]</p>
+                <p className="pl-4"><span className="text-purple-400">self</span>.focus = [<span className="text-green-400">"AI Automation"</span>]</p>
               </div>
             </div>
             <div className="mt-8 flex justify-around">

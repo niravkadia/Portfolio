@@ -29,7 +29,7 @@ export default function Footer() {
             <a href="mailto:niravrajput0008@gmail.com" className="p-3 rounded-full glass hover:text-primary transition-all">
               <Mail className="w-5 h-5" />
             </a>
-            <a href="#" className="p-3 rounded-full glass hover:text-primary transition-all">
+            <a href="https://github.com/niravkadia" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass hover:text-primary transition-all">
               <Github className="w-5 h-5" />
             </a>
           </div>

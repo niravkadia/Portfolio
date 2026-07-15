@@ -1,5 +1,28 @@
-# Python Development Environment Requirements
-# Generated based on the portfolio projects and skills
+# ============================================================
+# Nirav Kadia — Portfolio Project
+# ============================================================
+# This is a Next.js (Node.js) project.
+# The JavaScript/TypeScript dependencies are managed via npm.
+# Run: npm install     → to install all dependencies
+# Run: npm run dev     → to start local development server
+# Run: npm run build   → to create production build
+# Run: npm run start   → to start production server
+#
+# Node.js Dependencies (see package.json for full list):
+#   - next@16.1.6
+#   - react@19.2.3
+#   - framer-motion
+#   - lucide-react
+#   - tailwindcss@4
+#   - typescript
+#   - clsx
+#   - tailwind-merge
+#
+# ============================================================
+# Python Backend Skills Reference (for portfolio projects)
+# ============================================================
+# These are the Python packages used in Nirav's backend projects
+# (NOT required to run this portfolio website)
 
 # Frameworks
 fastapi
@@ -7,12 +30,11 @@ django
 djangorestframework
 
 # AI & Automation
-openclaw
 crewai
 
 # Database
-psycopg2-binary  # For PostgreSQL
-motor            # For MongoDB (FastAPI/Asynchronous)
+psycopg2-binary
+motor
 SQLAlchemy
 pydantic
 

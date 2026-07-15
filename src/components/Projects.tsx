@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, ShoppingBag, Zap, FileText, Database } from "lucide-react";
+import { Github, ShoppingBag, Zap, FileText, Database } from "lucide-react";
 
 const projects = [
   {
@@ -11,7 +11,7 @@ const projects = [
     tags: ["Django", "OpenClaw AI", "Tailwind CSS", "Stripe API", "PostgreSQL"],
     icon: <ShoppingBag className="w-10 h-10 text-blue-400" />,
     link: "#",
-    repo: "#",
+    repo: "https://github.com/niravkadia",
   },
   {
     title: "Zoho Projects Automation Engine",
@@ -20,7 +20,7 @@ const projects = [
     tags: ["FastAPI", "Zoho Projects API", "Google Sheets API", "Docker", "OAuth 2.0"],
     icon: <Zap className="w-10 h-10 text-yellow-400" />,
     link: "#",
-    repo: "#",
+    repo: "https://github.com/niravkadia",
   },
   {
     title: "FastAPI Blog CMS",
@@ -29,7 +29,7 @@ const projects = [
     tags: ["FastAPI", "JWT", "SQLAlchemy", "PostgreSQL", "Pydantic"],
     icon: <FileText className="w-10 h-10 text-purple-400" />,
     link: "#",
-    repo: "#",
+    repo: "https://github.com/niravkadia",
   },
   {
     title: "Production-Ready Expense Tracker API",
@@ -38,7 +38,7 @@ const projects = [
     tags: ["FastAPI", "MongoDB", "JWT", "Asynchronous Architecture"],
     icon: <Database className="w-10 h-10 text-orange-400" />,
     link: "#",
-    repo: "#",
+    repo: "https://github.com/niravkadia",
   },
 ];
 
@@ -78,10 +78,12 @@ export default function Projects() {
                   {project.icon}
                 </div>
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a href={project.link} className="p-3 rounded-full bg-background/80 hover:bg-primary hover:text-primary-foreground transition-all">
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                  <a href={project.repo} className="p-3 rounded-full bg-background/80 hover:bg-primary hover:text-primary-foreground transition-all">
+                  <a 
+                    href={project.repo} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="p-3 rounded-full bg-background/80 hover:bg-primary hover:text-primary-foreground transition-all"
+                  >
                     <Github className="w-5 h-5" />
                   </a>
                 </div>

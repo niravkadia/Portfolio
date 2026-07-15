@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Award, BookOpen } from "lucide-react";
+import { GraduationCap, BookOpen } from "lucide-react";
 
 const education = [
   {
@@ -17,20 +17,6 @@ const education = [
     period: "2017 – 2020",
     grade: "6.7 / 10 GPA",
     icon: <GraduationCap className="w-6 h-6 text-primary" />,
-  },
-  {
-    degree: "Higher Secondary Certificate (HSC)",
-    school: "H.H. Patel High School, Ahmedabad",
-    period: "2017",
-    grade: "7.0 / 10 GPA",
-    icon: <Award className="w-6 h-6 text-primary" />,
-  },
-  {
-    degree: "Secondary School Certificate (SSC)",
-    school: "H.H. Patel High School, Ahmedabad",
-    period: "2015",
-    grade: "6.3 / 10 GPA",
-    icon: <Award className="w-6 h-6 text-primary" />,
   },
 ];
 
@@ -65,7 +51,7 @@ export default function About() {
             <h3 className="text-2xl font-bold mb-6">Who is Nirav?</h3>
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                As a dedicated <span className="text-foreground font-medium">Python Developer</span>, I specialize in building scalable web applications and AI-powered solutions. I have strong expertise in backend development using <span className="text-foreground font-medium">FastAPI, Django, and Django REST Framework</span>.
+                As a dedicated <span className="text-foreground font-medium">Python Developer</span>, I specialize in building scalable web applications and AI-powered solutions. I have strong expertise in backend development using <span className="text-foreground font-medium">Django, Django REST Framework, and FastAPI</span>.
               </p>
               <p>
                 I am passionate about integrating AI and automation frameworks such as <span className="text-foreground font-medium">OpenClaw and CrewAI</span> to build automated workflows. My goal is to deliver high-quality, innovative software solutions while continuously learning emerging technologies.
@@ -78,14 +64,6 @@ export default function About() {
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-primary"></div>
                   <span>Backend Architect</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-primary"></div>
-                  <span>Cloud & DevOps</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-primary"></div>
-                  <span>Big Data Analytics</span>
                 </div>
               </div>
             </div>
