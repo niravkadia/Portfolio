@@ -1,12 +1,15 @@
 const { spawn } = require("child_process");
+const path = require("path");
 
 const port = process.env.PORT || 3000;
-const start = process.platform === "win32" ? "npm.cmd" : "npm";
+const host = process.env.HOST || "0.0.0.0";
+const nextBin = path.join(__dirname, "node_modules", "next", "dist", "bin", "next");
+const isWindows = process.platform === "win32";
 
-const child = spawn(start, ["run", "start:next"], {
-  env: { ...process.env, PORT: String(port), HOSTNAME: "0.0.0.0" },
+const child = spawn(process.execPath, [nextBin, "start", "--hostname", host, "--port", String(port)], {
+  cwd: __dirname,
   stdio: "inherit",
-  shell: false,
+  env: { ...process.env, PORT: String(port), HOST: host },
 });
 
 child.on("exit", (code, signal) => {
