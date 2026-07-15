@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "../lib/utils.ts";
+import { cn } from "../../src/lib/utils";
 
 const navLinks = [
   { name: "About", href: "#about" },

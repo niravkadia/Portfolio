@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Terminal, Code2, Database } from "lucide-react";
-import { cn } from "../lib/utils.ts";
+import { cn } from "../../src/lib/utils";
 
 export default function Hero() {
   return (
